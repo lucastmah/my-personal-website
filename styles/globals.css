@@ -15,22 +15,27 @@
     }
 }
 
-a {
-    @apply underline
+
+* {
+    scroll-behavior: smooth;
 }
 
-.markdown {
-    @apply mb-1;
+.header {
+    position: fixed;
+    top: 0;
+    background-color: rgb(173, 187, 186);
+    width: 100%;
+    opacity: 90%;
+    z-index: 1000; /* Ensure it is on top of other elements */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+h1 {
+    font-size: 100px;
+    margin-top: 100px;
+    text-align: center;
 }
 
-.alert .markdown {
-    @apply mb-0;
-}
-
-.markdown p {
-    @apply mb-3;
-}
-
-.btn:disabled {
-    @apply text-neutral-400 bg-neutral-700;
+section {
+    padding-left: 50px;
 }
