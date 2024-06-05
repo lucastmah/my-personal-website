@@ -10,7 +10,7 @@ const navItems = [
 
 export function Header() {
     return (
-        <nav className="header flex w-[100%] justify-between m-auto p-[15px] px-14">
+        <nav className="header flex justify-between m-auto p-[20px] px-16">
             <Image src={'/name.png'} height={30} width={150} alt='logo'/>
             {!!navItems?.length && (
                 <ul className="flex gap-[20px]">
