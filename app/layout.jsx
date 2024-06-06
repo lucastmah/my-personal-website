@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import { Footer } from '../components/footer';
 import { Header } from '../components/header';
+import { Banner } from '../components/banner';
 
 export const metadata = {
     title: 'Lucas Mah'
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
             </head>
             <body className="antialiased text-black">
                 <Header />
+                <Banner />
                 <div className="flex flex-col min-h-screen bg-grid-pattern">    
                     <div className="grow">{children}</div>
                 </div>

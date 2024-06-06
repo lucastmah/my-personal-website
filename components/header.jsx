@@ -15,7 +15,7 @@ export function Header() {
             {!!navItems?.length && (
                 <ul className="flex gap-[20px]">
                     {navItems.map((item, index) => (
-                        <li key={index}>
+                        <li className='font-semibold' key={index}>
                             <Link
                                 href={item.href}
                                 className="inline-block hover:opacity-80 sm:px-3 no-underline"

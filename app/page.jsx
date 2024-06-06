@@ -1,4 +1,6 @@
+import { Banner } from 'components/banner';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Page() {
     return (
