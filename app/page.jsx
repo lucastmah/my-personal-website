@@ -7,7 +7,7 @@ export default function Page() {
     return (
         <main className="flex flex-col">
             <section id='about' className="flex flex-row flex-wrap items-center justify-evenly min-h-screen bg-blue-200">
-                <Banner />
+                {/* <Banner /> */}
                 <Image src={'/me.jpg'} width={600} height={450} alt='logo'/>
                 <div className='box my-auto p-8'>
                     <h1>About</h1>
