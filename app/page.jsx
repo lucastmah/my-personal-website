@@ -7,7 +7,6 @@ export default function Page() {
     return (
         <main className="flex flex-col">
             <section id='about' className="flex flex-row flex-wrap items-center justify-evenly min-h-screen bg-blue-200">
-                {/* <Banner /> */}
                 <Image src={'/me.jpg'} width={600} height={450} alt='logo'/>
                 <div className='box my-auto p-8'>
                     <h1>About</h1>
@@ -46,7 +45,7 @@ export default function Page() {
                 </ul>
             </section>
             <section id='projects' className="flex flex-col justify-center items-center min-h-screen bg-blue-400">
-                <h1>Personal Endeavours</h1>
+                <h1 className='text-center leading-none'>Personal Endeavours</h1>
                 <div className='flex flex-row flex-wrap justify-center max-w-[800px] gap-32 mt-10'>
                     <Tile icon='/health_icon.png'>
                         <div className='absolute bg-gray-100 w-[150px] h-[40px] translate-x-[-10px] translate-y-[-10px] rounded-lg'>
@@ -72,26 +71,26 @@ export default function Page() {
             </section>
             <section id='contact' className="flex flex-col justify-center min-h-screen bg-blue-300">
                 <h1>Contact</h1>
-                <div className='flex flex-row flex-wrap justify-evenly h-[150px] mt-10'>
-                    <div className='flex flex-col justify-between min-w-[150px]'>
+                <div className='flex flex-row flex-wrap justify-center h-[150px] mt-10 gap-48'>
+                    <div className='flex flex-col justify-between'>
                         <a href='https://linkedin.com/in/lucasmah' alt='linkedin' target="_blank" className='flex items-center justify-center'>
                             <Image src={'/linkedin_icon.png'} height={100} width={100} alt='logo' />
                         </a>
                         <p className='contactText'>Linkedin</p>
                     </div>
-                    <div className='flex flex-col justify-between min-w-[150px]'>
+                    <div className='flex flex-col justify-between'>
                         <a href='https://github.com/lucastmah' alt='github' target="_blank" className='flex items-center justify-center'>
                             <Image src={'/github_icon.png'} height={100} width={100} alt='logo' />
                         </a>
                         <p className='contactText'>GitHub</p>
                     </div>
-                    <div className='flex flex-col justify-between min-w-[150px]'>
+                    <div className='flex flex-col justify-between'>
                         <a href='mailto:lucasmah@outlook.com' alt='lucasmah@outlook.com' target="_blank" className='flex items-center justify-center'>
                             <Image src={'/email_icon.png'} height={100} width={100} alt='logo' />
                         </a>
                         <p className='contactText'>Email</p>
                     </div>
-                    <div className='flex flex-col justify-between min-w-[150px]'>
+                    <div className='flex flex-col justify-between'>
                         <a href='/files/Lucas_Mah_Resume.pdf' alt='Lucas_Mah_Resume.pdf' target="_blank" className='flex items-center justify-center'>
                             <Image src={'/resume_icon.png'} height={100} width={100} alt='logo' />
                         </a>

@@ -1,6 +1,3 @@
-import Link from 'next/link';
-import Image from 'next/image';
-
 const navItems = [
     { linkText: 'About', href: '/#about' },
     { linkText: 'Experience', href: '/#experience' },
@@ -10,22 +7,17 @@ const navItems = [
 
 export function Header() {
     return (
-        <nav className="header flex justify-between m-auto p-[20px] px-16">
-            <Image src={'/name.png'} height={30} width={150} alt='logo'/>
+        <header className="header">
+            <a className='logo'><img src={'/name.png'} width="111" height="20" alt='logo'/></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span className="navicon"></span></label>
             {!!navItems?.length && (
-                <ul className="flex gap-[20px]">
+                <ul className='menu'>
                     {navItems.map((item, index) => (
-                        <li className='font-semibold' key={index}>
-                            <Link
-                                href={item.href}
-                                className="inline-block hover:opacity-80 sm:px-3 no-underline"
-                            >
-                                {item.linkText}
-                            </Link>
-                        </li>
+                        <li key={index}><a href={item.href}>{item.linkText}</a></li>
                     ))}
                 </ul>
             )}
-        </nav>
+        </header>
     );
 }
