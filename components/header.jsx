@@ -1,3 +1,4 @@
+'use client';
 const navItems = [
     { linkText: 'About', href: '/#about' },
     { linkText: 'Experience', href: '/#experience' },
@@ -6,6 +7,12 @@ const navItems = [
 ];
 
 export function Header() {
+
+    function handleClick() {
+        var checkbox = document.getElementById("menu-btn");
+        checkbox.checked = false;
+    }
+
     return (
         <header className="header">
             <a className='logo'><img src={'/name.png'} width="111" height="20" alt='logo'/></a>
@@ -14,7 +21,7 @@ export function Header() {
             {!!navItems?.length && (
                 <ul className='menu'>
                     {navItems.map((item, index) => (
-                        <li key={index}><a href={item.href}>{item.linkText}</a></li>
+                        <li key={index}><a href={item.href} onClick={handleClick}>{item.linkText}</a></li>
                     ))}
                 </ul>
             )}
