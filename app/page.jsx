@@ -1,4 +1,3 @@
-import { Banner } from 'components/banner';
 import { Tile } from 'components/tile';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -45,7 +44,7 @@ export default function Page() {
                 </ul>
             </section>
             <section id='projects' className="flex flex-col justify-center items-center min-h-screen bg-blue-400">
-                <h1 className='text-center leading-none'>Personal Endeavours</h1>
+                <h1 className='leading-none'>Personal Endeavours</h1>
                 <div className='flex flex-row flex-wrap justify-center max-w-[800px] gap-32 mt-10'>
                     <Tile icon='/health_icon.png'>
                         <div className='absolute bg-gray-100 w-[150px] h-[40px] translate-x-[-10px] translate-y-[-10px] rounded-lg'>
@@ -69,9 +68,9 @@ export default function Page() {
                     </Tile>
                 </div>
             </section>
-            <section id='contact' className="flex flex-col justify-center min-h-screen bg-blue-300">
-                <h1>Contact</h1>
-                <div className='flex flex-row flex-wrap justify-center h-[150px] mt-10 gap-48'>
+            <section id='contact' className="flex flex-col justify-center min-h-screen h-[100%] bg-blue-300">
+                <h1>Contacts</h1>
+                <div className='flex flex-row flex-wrap justify-center mt-10 gap-32'>
                     <div className='flex flex-col justify-between'>
                         <a href='https://linkedin.com/in/lucasmah' alt='linkedin' target="_blank" className='flex items-center justify-center'>
                             <Image src={'/linkedin_icon.png'} height={100} width={100} alt='logo' />
@@ -96,9 +95,6 @@ export default function Page() {
                         </a>
                         <p className='contactText'>Resume</p>
                     </div>
-                    
-                    
-                    
                 </div>
             </section>
         </main>
