@@ -9,7 +9,7 @@ export default function Page () {
     <main className='flex flex-col'>
       <Section id='about' color='bg-blue-200'>
         <div className='flex flex-row flex-wrap items-center justify-center gap-8'>
-          <Image src='/me.jpg' width={600} height={450} alt='logo' />
+          <Image draggable='false' src='/me.jpg' width={600} height={450} alt='logo' />
           <div className='box my-auto p-8'>
             <h1>About</h1>
             <p>Hi there! My name is Lucas Mah and I am a fourth year student completing a BSc in computer science with a minor in business administration at Simon Fraser University. </p>
