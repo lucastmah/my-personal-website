@@ -41,7 +41,7 @@ export default function Page () {
         </div>
       </Section>
       <Section id='contact' color='bg-blue-300'>
-        <h1 className='px-[%]'>Contacts</h1>
+        <h1 className='px-[25%]'>Contacts</h1>
         <div className='flex flex-row flex-wrap justify-center mt-10 gap-32'>
           <Contact link='https://linkedin.com/in/lucasmah' alt='linkedin' icon='/linkedin_icon.png' text='Linkedin' />
           <Contact link='https://github.com/lucastmah' alt='github' icon='/github_icon.png' text='GitHub' />

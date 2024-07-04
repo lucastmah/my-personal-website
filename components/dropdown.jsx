@@ -18,7 +18,7 @@ export function Dropdown () {
       {!!navItems?.length && (
         <ul className='menu'>
           {navItems.map((item, index) => (
-            <li key={index} className='dropdown_box'><a href={item.href} onClick={handleClick} className='dropdown_selection'>{item.linkText}</a></li>
+            <li key={index} className='dropdown_box'><a href={item.href} onClick={handleClick} className='dropdown-selection'>{item.linkText}</a></li>
           ))}
         </ul>
       )}
