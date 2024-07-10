@@ -46,7 +46,7 @@ export default function Page () {
           <Contact link='https://linkedin.com/in/lucasmah' alt='linkedin' icon='/linkedin_icon.png' text='Linkedin' />
           <Contact link='https://github.com/lucastmah' alt='github' icon='/github_icon.png' text='GitHub' />
           <Contact link='mailto:lucasmah@outlook.com' alt='lucasmah@outlook.com' icon='/email_icon.png' text='Email' />
-          <Contact link='/files/Lucas_Mah_Resume.pdf' alt='Lucas_Mah_Resume.pdf' icon='/resume_icon.png' text='Resume' />
+          <Contact link='/files/Lucas_Mah_Resume.docx' alt='Lucas_Mah_Resume.pdf' icon='/resume_icon.png' text='Resume' />
         </div>
       </Section>
     </main>

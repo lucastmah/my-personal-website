@@ -57,7 +57,7 @@ h4 {
 
 /* header mobile and desktop layout */
 .header {
-  box-shadow: 1px 1px 4px 0 rgba(0 0 0 .1);
+  box-shadow: 1px 1px 4px 0 rgba(0 0 0 10%);
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -74,6 +74,9 @@ h4 {
   overflow: hidden;
   background-color: rgb(173 187 186);
   display: block;
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
 
 .dropdown-selection {
@@ -93,12 +96,6 @@ h4 {
   font-size: 2em;
   padding: 20px;
   text-decoration: none;
-}
-
-.menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
 }
 
 .header .menu-icon {
@@ -122,11 +119,11 @@ h4 {
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
   background: #333;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   position: absolute;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   width: 100%;
 }
 
@@ -168,12 +165,11 @@ h4 {
 /* 48em = 768px */
 
 @media (min-width: 48em) {
-
-  .dropdown_box {
+  .dropdown-box {
     float: left;
   }
 
-  .dropdown_selection {
+  .dropdown-selection {
     padding: 20px 30px;
   }
 
@@ -186,5 +182,4 @@ h4 {
   .header .menu-icon {
     display: none;
   }
-
 }
