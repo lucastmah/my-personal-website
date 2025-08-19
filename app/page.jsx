@@ -21,7 +21,13 @@ export default function Page () {
           <h1>Experience</h1>
           <ul className='pl-[5%]'>
             <li>
-              <Job icon='/Telus_logo.png' company='TELUS' title='Security Specialist Intern' date='Jan 2024 - Present' description='Governance, Risk Management, Awareness, Google Workspace, and Looker Studio.' />
+              <Job icon='/Amazon_icon.png' company='Amazon' title='Software Development Engineer Intern' date='May 2025 - Aug 2025' description='Automated report generation using AWS.' />
+            </li>
+            <li>
+              <Job icon='/Telus_logo.png' company='TELUS' title='Software Developer Intern' date='Aug 2024 - Dec 2024' description='PI scanner using Python, spaCy and pyInstaller packages, and Inno Setup to create an install wizard.' />
+            </li>
+            <li>
+              <Job icon='/Telus_logo.png' company='TELUS' title='Security Specialist Intern' date='Jan 2024 - Aug 2024' description='Governance, Risk Management, Awareness, Google Workspace, and Looker Studio.' />
             </li>
             <li>
               <Job icon='/Maple_Leaf.png' company='Canada Revenue Agency' title='Research Analyst Intern' date='Feb 2022 - Aug 2022' description='MS Access with VBA and SAS Viya Reporting.' />
@@ -46,7 +52,7 @@ export default function Page () {
           <Contact link='https://linkedin.com/in/lucasmah' alt='linkedin' icon='/linkedin_icon.png' text='Linkedin' />
           <Contact link='https://github.com/lucastmah' alt='github' icon='/github_icon.png' text='GitHub' />
           <Contact link='mailto:lucasmah@outlook.com' alt='lucasmah@outlook.com' icon='/email_icon.png' text='Email' />
-          <Contact link='/files/Lucas_Mah_Resume.docx' alt='Lucas_Mah_Resume.pdf' icon='/resume_icon.png' text='Resume' />
+          <Contact link='/files/Lucas_Mah_Resume.pdf' alt='Lucas_Mah_Resume.pdf' icon='/resume_icon.png' text='Resume' />
         </div>
       </Section>
     </main>
